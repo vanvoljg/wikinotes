@@ -141,9 +141,9 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
-<li>~DevOps Roadmap</li>
-
 <li>$:/config/AnimationDuration</li>
+
+<li>$:/config/AutoSave</li>
 
 <li>$:/core</li>
 
@@ -189,6 +189,8 @@ Error message and password prompt
 
 <li>$:/themes/tiddlywiki/vanilla</li>
 
+<li>DevOps Roadmap</li>
+
 </ul>
 </p>
 
@@ -203,185 +205,11 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
-<div created="20200630172530324" modified="20200630185629042" tags="devops career" title="~DevOps Roadmap">
-<pre>! ~DevOps
-
-!! Programming Language
-
-* Rust
-* Go
-* C
-* C++
-* Python
-* Ruby
-* Node
-* Elixir
-
-!! OS Concepts
-
-* Startup Management (init)
-* Service Management (systemd)
-* Process Management
-* Threads and Concurrency
-* Sockets
-* POSIX Basics
-* Networking Concepts
-* IO Management
-* Virtualization
-* Memory/Storage
-* File Systems
-
-!! Server Management
-
-!!! Operating Systems
-
-* Windows
-* ~NetBSD
-* ~OpenBSD
-* ~FreeBSD
-* Linux: Arch, Gentoo, Ubuntu, Debian
-* Linux: RHEL
-* Linux: ~CentOS
-
-!!! Terminal Usage
-
-* BASH Scripting
-* Vim/Nano/~PowerShell/Emacs
-* System Performance (nmon, iostat, sar, vmstat)
-* Text Manipulation (awk, sed, grep sort, uniq, cat, cut, echo, fmt, tr, nl, egrep, fgrep, wc)
-* Process Monitoring (ps, top, htop, atop, lsof)
-* Network Monitoring (nmap, tcpdump, ping, mtr, traceroute, dig, airmon, airodump, dig, iptables, netstat)
-* Others (strace, dtrace, systemtop, uname, df, history)
-* Terminal Multiplexers (tmux, screen)
-* Compiling apps from source)
-
-!! Networking, Security, Protocols
-
-* HTTP
-* HTTPS
-* FTP
-* SSL / TLS
-* SSH
-* Port Forwarding
-
-!!! (Emails)
-
-* (White/Grey Listing)
-* (SMTP)
-* (IMAPS)
-* (POP3S)
-* (DMARC)
-* (SPF)
-* (Domain Keys)
-
-!! Server Setups
-
-* Reverse Proxy
-* Forward Proxy
-* Caching Server
-* Load Balancer
-* Firewall
-
-!!! Web Server
-
-* Nginx
-* Apache
-* IIS
-* Tomcat
-* Caddy
-
-!! Infrastructure As Code
-
-!!! Containers
-
-* Docker
-* LXC
-
-!!! Configuration Management
-
-* Ansible
-* Chef
-* Salt
-* Puppet
-
-!!! Container Orchestration
-
-* Kubernetes
-* Docker Swarm
-* Mesos
-* Nomad
-
-!!! Infrastructure Provisioning
-
-* Terraform
-* ~CloudFormation
-* Pulumi
-
-!!! Service Mesh
-
-* Istio
-* Consul
-* Envoy
-* Linkerd
-
-!! CI/CD Tools
-
-* ~GitLab CI
-* ~GitHub Actions
-* Jenkins
-* Travis CI
-* Circle CI
-* Bamboo
-* ~TeamCity
-* Azure ~DevOps
-
-!! Monitoring software and infrastructure
-
-!!! Application Monitoring
-
-* Jaeger
-* New Relic
-* ~AppDynamics
-* Instana
-* ~OpenTracing
-
-!!! Infrastructure Monitoring
-
-* Prometheus
-* Grafana
-* Nagios
-* Zabbix
-* Monit
-* Datadog
-
-!!! Logs Management
-
-* Elastic Stack
-* Graylog
-* Splunk
-* Papertrail
-
-!! Cloud Providers
-
-* AWS
-* ~DigitalOcean
-* Azure
-* Google Cloud
-* Heroku
-* Linode
-* Vultr
-
-!! Cloud Design Patterns
-
-(https://bit.ly/cloud-arch-patterns)
-
-* Availability
-* Data Management
-* Design and Implementation
-* Management and Monitoring</pre>
-</div>
 <div created="20200630171103396" modified="20200630171103664" title="$:/config/AnimationDuration">
 <pre>100</pre>
+</div>
+<div created="20200630185800734" modified="20200630185800734" title="$:/config/AutoSave">
+<pre>no</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.22">
 <pre>{
@@ -9792,11 +9620,11 @@ Error message and password prompt
 <div created="20200630171138409" modified="20200630171141833" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
 </div>
-<div created="20200630171148300" modified="20200630172524245" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20200630171148300" modified="20200630185758816" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
-<div created="20200630171203829" modified="20200630172522044" title="$:/state/tab-2065006209">
-<pre>$:/core/ui/ControlPanel/Saving/General</pre>
+<div created="20200630171203829" modified="20200630185804832" title="$:/state/tab-2065006209">
+<pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
 <div created="20200630181952520" modified="20200630181952520" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
@@ -9804,7 +9632,7 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200630181954195" list="[[~DevOps Roadmap]]" modified="20200630181954195" title="$:/StoryList">
+<div created="20200630181954195" list="[[DevOps Roadmap]]" modified="20200630185755661" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9976,6 +9804,183 @@ Error message and password prompt
         }
     }
 }</pre>
+</div>
+<div created="20200630172530324" modified="20200630185701671" tags="devops career" title="DevOps Roadmap">
+<pre>! ~DevOps
+
+!! Programming Language
+
+* Rust
+* Go
+* C
+* C++
+* Python
+* Ruby
+* Node
+* Elixir
+
+!! OS Concepts
+
+* Startup Management (init)
+* Service Management (systemd)
+* Process Management
+* Threads and Concurrency
+* Sockets
+* POSIX Basics
+* Networking Concepts
+* IO Management
+* Virtualization
+* Memory/Storage
+* File Systems
+
+!! Server Management
+
+!!! Operating Systems
+
+* Windows
+* ~NetBSD
+* ~OpenBSD
+* ~FreeBSD
+* Linux: Arch, Gentoo, Ubuntu, Debian
+* Linux: RHEL
+* Linux: ~CentOS
+
+!!! Terminal Usage
+
+* BASH Scripting
+* Vim/Nano/~PowerShell/Emacs
+* System Performance (nmon, iostat, sar, vmstat)
+* Text Manipulation (awk, sed, grep sort, uniq, cat, cut, echo, fmt, tr, nl, egrep, fgrep, wc)
+* Process Monitoring (ps, top, htop, atop, lsof)
+* Network Monitoring (nmap, tcpdump, ping, mtr, traceroute, dig, airmon, airodump, dig, iptables, netstat)
+* Others (strace, dtrace, systemtop, uname, df, history)
+* Terminal Multiplexers (tmux, screen)
+* Compiling apps from source)
+
+!! Networking, Security, Protocols
+
+* HTTP
+* HTTPS
+* FTP
+* SSL / TLS
+* SSH
+* Port Forwarding
+
+!!! (Emails)
+
+* (White/Grey Listing)
+* (SMTP)
+* (IMAPS)
+* (POP3S)
+* (DMARC)
+* (SPF)
+* (Domain Keys)
+
+!! Server Setups
+
+* Reverse Proxy
+* Forward Proxy
+* Caching Server
+* Load Balancer
+* Firewall
+
+!!! Web Server
+
+* Nginx
+* Apache
+* IIS
+* Tomcat
+* Caddy
+
+!! Infrastructure As Code
+
+!!! Containers
+
+* Docker
+* LXC
+
+!!! Configuration Management
+
+* Ansible
+* Chef
+* Salt
+* Puppet
+
+!!! Container Orchestration
+
+* Kubernetes
+* Docker Swarm
+* Mesos
+* Nomad
+
+!!! Infrastructure Provisioning
+
+* Terraform
+* ~CloudFormation
+* Pulumi
+
+!!! Service Mesh
+
+* Istio
+* Consul
+* Envoy
+* Linkerd
+
+!! CI/CD Tools
+
+* ~GitLab CI
+* ~GitHub Actions
+* Jenkins
+* Travis CI
+* Circle CI
+* Bamboo
+* ~TeamCity
+* Azure ~DevOps
+
+!! Monitoring software and infrastructure
+
+!!! Application Monitoring
+
+* Jaeger
+* New Relic
+* ~AppDynamics
+* Instana
+* ~OpenTracing
+
+!!! Infrastructure Monitoring
+
+* Prometheus
+* Grafana
+* Nagios
+* Zabbix
+* Monit
+* Datadog
+
+!!! Logs Management
+
+* Elastic Stack
+* Graylog
+* Splunk
+* Papertrail
+
+!! Cloud Providers
+
+* AWS
+* ~DigitalOcean
+* Azure
+* Google Cloud
+* Heroku
+* Linode
+* Vultr
+
+!! Cloud Design Patterns
+
+(https://bit.ly/cloud-arch-patterns)
+
+* Availability
+* Data Management
+* Design and Implementation
+* Management and Monitoring</pre>
 </div>
 
 
