@@ -931,8 +931,8 @@ $:/config/ViewToolbarButtons/Visibility/$(listItem)$
 &lt;/$set&gt;
 </pre>
 </div>
-<div created="20200630171103396" modified="20200630171103664" title="$:/config/AnimationDuration">
-<pre>100</pre>
+<div created="20200630171103396" modified="20200701204708015" title="$:/config/AnimationDuration">
+<pre>200</pre>
 </div>
 <div created="20200630185800734" modified="20200630185800734" title="$:/config/AutoSave">
 <pre>no</pre>
@@ -11940,8 +11940,8 @@ exports.context = contextWidget;
 <div created="20200630171138409" modified="20200630171141833" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
 </div>
-<div created="20200630171148300" modified="20200630193511338" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20200630171148300" modified="20200701204703011" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20200630171203829" modified="20200630185804832" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -11952,7 +11952,7 @@ exports.context = contextWidget;
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[Backend Roadmap]]" title="$:/StoryList">
+<div created="20200701204655490" list="[[DevOps Roadmap]] [[Backend Roadmap]]" modified="20200701204700710" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200519141000553" list="$:/.giffmex/Buttons/more-tiddler-edit-actions $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200521145647980" tags="$:/giffmex/bigeditarea $:/giffmex/stroll" title="$:/tags/EditToolbar">
@@ -13090,7 +13090,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div bag="default" created="20200127165334843" modified="20200521145813991" revision="0" tags="$:/giffmex/stroll" title="$:/view" type="text/vnd.tiddlywiki">
 <pre>classic</pre>
 </div>
-<div created="20200701163821792" modified="20200701170615837" tags="career backend" title="Backend Roadmap">
+<div created="20200701163821792" modified="20200701231151326" tags="career backend" title="Backend Roadmap">
 <pre>! Internet
 
 * Basics of internet workings
@@ -13144,7 +13144,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 
 * ~PostgreSQL
 * ~MySQL
-* ~MariaDB (~MySQL free)
+* ~MariaDB
 * MS SQL
 * Oracle DB
 
@@ -13172,7 +13172,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * REST
 * JSON APIs
 * (HATEOAS)
-* (~OpenAPI spec / Swagger)
+* (~OpenAPI / Swagger)
 * (SOAP)
 
 !! Authentication
@@ -13240,8 +13240,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 
 ! (Message Brokers)
 
-* ~RabbitMQ
-* Kafka
+* (~RabbitMQ)
+* (Kafka)
 
 ! Containerization / Virtualization Basics
 
@@ -13251,8 +13251,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 
 ! (~GraphQL)
 
-* Apollo
-* Relay modern
+* (Apollo)
+* (Relay modern)
 
 ! (Graph Databases)
 
@@ -13262,10 +13262,10 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 
 ! (Web Servers)
 
-* Nginx
-* Apache
-* Caddy
-* IIS
+* (Nginx)
+* (Apache)
+* (Caddy)
+* (IIS)
 
 ! Scaling Concerns
 
@@ -13287,10 +13287,8 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * Monitoring
 * Telemetry</pre>
 </div>
-<div created="20200630172530324" modified="20200630190954781" tags="devops career" title="DevOps Roadmap">
-<pre>! ~DevOps
-
-!! Programming Language
+<div created="20200630172530324" modified="20200701210200453" tags="devops career" title="DevOps Roadmap">
+<pre>! Programming Language
 
 * Rust
 * Go
@@ -13301,7 +13299,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * Node
 * Elixir
 
-!! OS Concepts
+! OS Concepts
 
 * Startup Management (init)
 * Service Management (systemd)
@@ -13315,9 +13313,9 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * Memory/Storage
 * File Systems
 
-!! Server Management
+! Server Management
 
-!!! Operating Systems
+!! Operating Systems
 
 * Windows
 * ~NetBSD
@@ -13327,19 +13325,73 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * Linux: RHEL
 * Linux: ~CentOS
 
-!!! Terminal Usage
+!! Terminal Usage
 
 * BASH Scripting
 * Vim/Nano/~PowerShell/Emacs
-* System Performance (nmon, iostat, sar, vmstat)
-* Text Manipulation (awk, sed, grep sort, uniq, cat, cut, echo, fmt, tr, nl, egrep, fgrep, wc)
-* Process Monitoring (ps, top, htop, atop, lsof)
-* Network Monitoring (nmap, tcpdump, ping, mtr, traceroute, dig, airmon, airodump, dig, iptables, netstat)
-* Others (strace, dtrace, systemtop, uname, df, history)
-* Terminal Multiplexers (tmux, screen)
 * Compiling apps from source)
 
-!! Networking, Security, Protocols
+!!! System Performance
+
+* nmon
+* iostat
+* sar
+* vmstat
+
+!!! Text Manipulation
+
+* awk
+* sed
+* grep
+* sort
+* uniq
+* cat
+* cut
+* echo
+* fmt
+* tr
+* nl
+* egrep
+* fgrep
+* wc
+
+!!! Process Monitoring
+
+* ps
+* top
+* htop
+* atop
+* lsof
+
+!!! Network Monitoring
+
+* nmap
+* tcpdump
+* ping
+* mtr
+* traceroute
+* dig
+* airmon
+* airodump
+* dig
+* iptables
+* netstat
+
+!!! Terminal Multiplexers
+
+* tmux
+* screen
+
+!!! Others
+
+* strace
+* dtrace
+* systemtop
+* uname
+* df
+* history
+
+! Networking, Security, Protocols
 
 * HTTP
 * HTTPS
@@ -13348,7 +13400,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * SSH
 * Port Forwarding
 
-!!! (Emails)
+!! (Emails)
 
 * (White/Grey Listing)
 * (SMTP)
@@ -13358,7 +13410,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * (SPF)
 * (Domain Keys)
 
-!! Server Setups
+! Server Setups
 
 * Reverse Proxy
 * Forward Proxy
@@ -13366,7 +13418,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * Load Balancer
 * Firewall
 
-!!! Web Server
+!! Web Server
 
 * Nginx
 * Apache
@@ -13374,41 +13426,41 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * Tomcat
 * Caddy
 
-!! Infrastructure As Code
+! Infrastructure As Code
 
-!!! Containers
+!! Containers
 
 * Docker
 * LXC
 
-!!! Configuration Management
+!! Configuration Management
 
 * Ansible
 * Chef
 * Salt
 * Puppet
 
-!!! Container Orchestration
+!! Container Orchestration
 
 * Kubernetes
 * Docker Swarm
 * Mesos
 * Nomad
 
-!!! Infrastructure Provisioning
+!! Infrastructure Provisioning
 
 * Terraform
 * ~CloudFormation
 * Pulumi
 
-!!! Service Mesh
+!! Service Mesh
 
 * Istio
 * Consul
 * Envoy
 * Linkerd
 
-!! CI/CD Tools
+! CI/CD Tools
 
 * ~GitLab CI
 * ~GitHub Actions
@@ -13419,9 +13471,9 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * ~TeamCity
 * Azure ~DevOps
 
-!! Monitoring software and infrastructure
+! Monitoring software and infrastructure
 
-!!! Application Monitoring
+!! Application Monitoring
 
 * Jaeger
 * New Relic
@@ -13429,7 +13481,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * Instana
 * ~OpenTracing
 
-!!! Infrastructure Monitoring
+!! Infrastructure Monitoring
 
 * Prometheus
 * Grafana
@@ -13438,14 +13490,14 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * Monit
 * Datadog
 
-!!! Logs Management
+!! Logs Management
 
 * Elastic Stack
 * Graylog
 * Splunk
 * Papertrail
 
-!! Cloud Providers
+! Cloud Providers
 
 * AWS
 * ~DigitalOcean
@@ -13455,7 +13507,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * Linode
 * Vultr
 
-!! Cloud Design Patterns
+! Cloud Design Patterns
 
 (https://bit.ly/cloud-arch-patterns)
 
