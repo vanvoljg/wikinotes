@@ -505,6 +505,8 @@ Error message and password prompt
 
 <li>DevOps Roadmap</li>
 
+<li>GitHub Shortcuts</li>
+
 <li>SSH Escape Sequences</li>
 
 </ul>
@@ -11930,7 +11932,7 @@ exports.context = contextWidget;
 <div created="20200630185927037" modified="20200630185932524" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Palette</pre>
 </div>
-<div created="20200630171128983" modified="20200630171143765" title="$:/state/tab--2112689675">
+<div created="20200630171128983" modified="20200706223802825" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
 <div created="20200630190047110" modified="20200630190128922" title="$:/state/tab--219645345">
@@ -11942,19 +11944,19 @@ exports.context = contextWidget;
 <div created="20200630171138409" modified="20200630171141833" title="$:/state/tab--959111941">
 <pre>$:/core/ui/ControlPanel/TiddlerFields</pre>
 </div>
-<div created="20200630171148300" modified="20200701204703011" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Info</pre>
+<div created="20200630171148300" modified="20200706223804963" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
 <div created="20200630171203829" modified="20200630185804832" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20200630181952520" modified="20200630193544139" title="$:/state/tab/sidebar--595412856">
+<div created="20200630181952520" modified="20200706223816815" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div list="[[SSH Escape Sequences]]" title="$:/StoryList">
+<div created="20200706222909107" list="[[DevOps Roadmap]] [[SSH Escape Sequences]] [[GitHub Shortcuts]]" modified="20200706223821181" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200519141000553" list="$:/.giffmex/Buttons/more-tiddler-edit-actions $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200521145647980" tags="$:/giffmex/bigeditarea $:/giffmex/stroll" title="$:/tags/EditToolbar">
@@ -13289,7 +13291,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * Monitoring
 * Telemetry</pre>
 </div>
-<div created="20200630172530324" modified="20200701210200453" tags="devops career" title="DevOps Roadmap">
+<div created="20200630172530324" modified="20200706224018664" tags="devops career" title="DevOps Roadmap">
 <pre>! Programming Language
 
 * Rust
@@ -13422,7 +13424,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 
 !! Web Server
 
-* Nginx
+* (!) Nginx
 * Apache
 * IIS
 * Tomcat
@@ -13432,22 +13434,22 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 
 !! Containers
 
-* Docker
+* (!) Docker
 * LXC
 
 !! Configuration Management
 
-* Ansible
+* (!) Ansible
 * Chef
 * Salt
 * Puppet
 
 !! Container Orchestration
 
+* (!) Nomad
 * Kubernetes
 * Docker Swarm
 * Mesos
-* Nomad
 
 !! Infrastructure Provisioning
 
@@ -13457,18 +13459,18 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 
 !! Service Mesh
 
+* (!) Consul
 * Istio
-* Consul
 * Envoy
 * Linkerd
 
 ! CI/CD Tools
 
+* (!) ~GitHub Actions
 * ~GitLab CI
-* ~GitHub Actions
 * Jenkins
 * Travis CI
-* Circle CI
+* (!) Circle CI
 * Bamboo
 * ~TeamCity
 * Azure ~DevOps
@@ -13518,7 +13520,46 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 * Design and Implementation
 * Management and Monitoring</pre>
 </div>
-<div created="20200703171755246" modified="20200703172125619" tags="ssh" title="SSH Escape Sequences">
+<div created="20200706222836508" modified="20200706223744916" tags="github shortcuts" title="GitHub Shortcuts">
+<pre>!!! Sitewide
+
+* `s` / `/` - Focus on search bar
+* `gn` - Go to notifications
+* `esc` - Closes hover cards
+
+!!! Repos
+
+* `gc` - Go to code tab
+* `gi` - Go to issues
+* `gp` - Go to pull requests
+* `gb` - Go to projects
+* `gw` - Go to wiki
+
+!!! Source editing
+
+* `e` - Open current file for editing
+* `ctrl+f` - Search in file
+* `ctrl+g` - Find next
+* `ctrl+shift+g` - Find previous
+* `ctrl+shift+f` - Replace current
+* `ctrl+shift+r` - Replace all
+* `alt+g` - Go to line
+* `ctrl+z` - Undo
+* `ctrl+y` - Redo
+* `ctrl+shift+p` - Toggle between edit / preview changes
+
+!!! Source browsing
+
+* `t` - Find file (by name)
+* `l` - Go to line
+* `w` - Change branch / tag
+* `y` - Expand URL to canonical / permanent / hash
+* `i` - Show / hide comments
+* `b` - Open blame view
+
+More: https://docs.github.com/en/github/getting-started-with-github/keyboard-shortcuts</pre>
+</div>
+<div created="20200703171755246" modified="20200706222917417" tags="ssh shortcuts" title="SSH Escape Sequences">
 <pre>https://lonesysadmin.net/2011/11/08/ssh-escape-sequences-aka-kill-dead-ssh-sessions/
 
 SSH has some interesting escape sequences built into it.
