@@ -509,6 +509,8 @@ Error message and password prompt
 
 <li>SSH Escape Sequences</li>
 
+<li>Xebow - Phoenix Live View</li>
+
 </ul>
 </p>
 
@@ -11956,7 +11958,7 @@ exports.context = contextWidget;
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200706222909107" list="[[DevOps Roadmap]] [[SSH Escape Sequences]] [[GitHub Shortcuts]]" modified="20200706223821181" title="$:/StoryList">
+<div list="[[Xebow - Phoenix Live View]]" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200519141000553" list="$:/.giffmex/Buttons/more-tiddler-edit-actions $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200521145647980" tags="$:/giffmex/bigeditarea $:/giffmex/stroll" title="$:/tags/EditToolbar">
@@ -13570,6 +13572,19 @@ In an SSH session:
 
 * `~?` List available escape sequences
 * `~.` Leave session</pre>
+</div>
+<div created="20200711071830178" modified="20200711075233947" tags="elixir phoenix [[live view]] [[full stack]] xebow nerves" title="Xebow - Phoenix Live View">
+<pre>These are some half-formed ideas from working with Live View over the past few hours.
+
+It works really well for well-crafted templates, but there are some things that should be avoided.
+
+To minimize the amount of data sent over the wire, as few levels of nested live view templates should be used as possible. Each live view nesting level adds a wrapper of its static parts and its dynamic parts.
+
+In Xebow, this is exaggerated because there is currently an extra level of nesting for each key. This should be minimized, somehow, because it will scale really poorly. 104-key keyboards will slow to a crawl. The frequency of events sent over the wire, and the size of those events, should be reduced in order to gain as much performance as possible.
+
+Using `&lt;%= if %&gt;` around a portion of a tag attribute causes the entire static part to be sent down the wire for each key, on each frame. Wrapping multiple things is not recommended Keep the `if` logic at the top of the live view, not inside for loops, if possible.
+
+The cheapest messages are the smallest messages, updated in the tightest way. Send whatever you like on the assigns initially, but for renders, constrain your live template to a small spot, then use phx-hooks and some ~JavaScript to update the colors of each key. The keys can easily be created with a `&lt;%= form for %&gt;` on the keys in the assigns in `mount`. Then on each render, all that needs to be sent is the colors, so only send those in their own assign. The phx-hook will trigger the ~JavaScript to update the colors.</pre>
 </div>
 
 
